@@ -163,7 +163,9 @@ async function initializeSocket(phoneNumber) {
   const sock = makeWASocket({
     printQRInTerminal: true,
     auth: state,
-    browser: ['BOT', '', '']
+    browser: ['BOT', '', ''],
+    markOnlineOnConnect: false
+    
   });
 
   sockets.set(phoneNumber, { sock });
