@@ -3,7 +3,7 @@ const {
   useMultiFileAuthState,
   DisconnectReason
 } = require('@whiskeysockets/baileys');
-require('dotenv').config();
+//require('dotenv').config();
 
 
 const QRCode = require('qrcode');
@@ -20,13 +20,7 @@ const userApiMap = new Map();
 
 const SESSION_TIMEOUT_MINUTES = 15;
 const MAX_CONTEXT_MESSAGES = 5;
-/*
-const GEMINI_API_KEYS = [
-  'AIzaSyALmB9kr8-e3PlG2OSplfgfMZBD4gMRyHA',
-  'AIzaSyDnrgMzubJwJAOBhjTb3VjZXtcxjkvq27U',
-  'AIzaSyABQjdY1f0IrIkWzJ68HZmkRKecrlJeYac'
-];
-*/
+
 const GEMINI_API_KEYS = [
   process.env.GEMINI_KEY_1,
   process.env.GEMINI_KEY_2,
