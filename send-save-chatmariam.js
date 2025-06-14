@@ -3,7 +3,7 @@ const {
   useMultiFileAuthState,
   DisconnectReason
 } = require('@whiskeysockets/baileys');
-//require('dotenv').config();
+require('.env').config();
 
 
 const QRCode = require('qrcode');
